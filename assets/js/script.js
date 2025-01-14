@@ -44,6 +44,7 @@ listaNombres.pop();
 
 console.log(`se eliminó a: ${listaNombres.shift()}, adios!`);
 
+//el comando indexOf nos ayuda a buscar un elemento:
 console.log( listaNombres.indexOf('Maria') );
 console.log( listaNombres.indexOf('Alberta') );
 console.log(listaNombres);
@@ -91,5 +92,17 @@ for (let numero of numeritos) {
     }
 }
 
-//esto es para mañan
-console.log( document.getElementById("titulo") );
+//Funciones: si quiero hacer algo, hago una función:
+function sumar(num1, num2){
+    let total = num1 + num2;
+    //console.log(total);
+    return total;
+}
+
+//vamos a convertir o crear funciones flecha:
+let sumar2 = (num1, num2) => {
+    return num1 + num2;
+}
+
+console.log( sumar(5,8) )
+console.log( sumar2(2,5) )
